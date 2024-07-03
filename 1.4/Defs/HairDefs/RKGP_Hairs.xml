@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HairDef>
+		<defName>RK_Short01</defName>
+		<label>Short01</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/RK_Short01</texPath>
+		<category>RK_StyleMisc</category>
+		<styleTags>
+			<li>RK_Style2</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>RK_Short02</defName>
+		<label>Short02</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/RK_Short02</texPath>
+		<category>RK_StyleMisc</category>
+		<styleTags>
+			<li>RK_Style2</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>RK_Wolftail</defName>
+		<label>Wolftail</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/RK_Wolftail</texPath>
+		<category>RK_StyleMisc</category>
+		<styleTags>
+			<li>RK_Style2</li>
+		</styleTags>
+	</HairDef> 
+	<HairDef>
+		<defName>RK_Braided2</defName>
+		<label>Braided</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/RK_Braided2</texPath>
+		<category>RK_StyleMisc</category>
+		<styleTags>
+			<li>RK_Style2</li>
+		</styleTags>
+	</HairDef>
+	<HairDef>
+		<defName>RK_Arona</defName>
+		<label>Arona</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/RK_Arona</texPath>
+		<category>RK_StyleMisc</category>
+		<styleTags>
+			<li>RK_Style2</li>
+		</styleTags>
+	</HairDef>
+
+</Defs>

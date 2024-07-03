@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<Operation Class="PatchOperationSequence">
+<operations>
+	<li Class="PatchOperationAdd" MayRequire="redmattis.bigsmall.core">
+	  <xpath>Defs</xpath>
+		  <value>
+			<GeneDef ParentName="BodyFrameBase">
+			<defName>BS_RKSmallFrame</defName>
+			<label>Ratkin Small Frame</label>
+			<description>Ratkins have slightly smaller body sizes compared to baseliners.</description>
+			<iconPath>GeneIcons/BS_Frames/Small</iconPath>
+			<displayOrderInCategory>1051</displayOrderInCategory>
+			<biostatCpx>1</biostatCpx>
+			<biostatMet>2</biostatMet>
+			<statFactors>
+			  <MiningSpeed>0.9</MiningSpeed>
+			  <ConstructionSpeed>0.9</ConstructionSpeed>
+			  <SM_RaidWealthMultiplier>0.85</SM_RaidWealthMultiplier>
+			</statFactors>
+			<statOffsets>
+			  <SM_BodySizeOffset>-0.11235</SM_BodySizeOffset>
+			  <SM_RaidWealthOffset>-500</SM_RaidWealthOffset>
+			  <MeleeHitChance>1</MeleeHitChance>
+			</statOffsets>
+			<selectionWeight>0.0</selectionWeight>
+			<marketValueFactor>1.0</marketValueFactor>
+			</GeneDef>
+		  </value>
+	</li>
+	<li Class="PatchOperationReplace" MayRequire="redmattis.bigsmall.core">
+	  <xpath>*/XenotypeDef[defName="Ratkin_Mouse" or "Ratkin_Mole" or "Ratkin_Labrat" or "Ratkin_Hamster" or "Ratkin_Squirrel" or "Ratkin_Vole"]/genes/li[text()="BodySize_RK"]</xpath>
+	  <value>
+		<li>BS_RKSmallFrame</li>
+	  </value>
+	</li>
+</operations>
+</Operation>
+</Patch>

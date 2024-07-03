@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RatkinTunnel_Guerrilla.label>tunnel invasion</RatkinTunnel_Guerrilla.label>
+  <RatkinTunnel_Guerrilla.letterLabel>Tunnel invasion</RatkinTunnel_Guerrilla.letterLabel>
+  <RatkinTunnel_Guerrilla.letterText>Ground tremors resembling digging were detected.\n\nA special ratkin assault team will soon come up from the ground. Stop them before they can cause damage.</RatkinTunnel_Guerrilla.letterText>
+
+  <RatkinTunnel_Thief.label>ratkin hole</RatkinTunnel_Thief.label>
+  <RatkinTunnel_Thief.letterLabel>Rat Hole</RatkinTunnel_Thief.letterLabel>
+  <RatkinTunnel_Thief.letterText>A rat hole has been found.\n\nDestroy it before thieves use it for infiltration.</RatkinTunnel_Thief.letterText>
+
+  <RatkinFollowUpTroops.label>follow-up unit</RatkinFollowUpTroops.label>
+  <RatkinFollowUpTroops.letterLabel>Follow-up unit</RatkinFollowUpTroops.letterLabel>
+  <RatkinFollowUpTroops.letterText>EMP explosion.\n\nWe need to prepare for the defense.</RatkinFollowUpTroops.letterText>
+
+
+</LanguageData>

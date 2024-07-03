@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 기본 옷 재배속도+5% 요리속도 +5% -->
+
+  <RK_ApronSkirt.label>Ratkin apron skirt</RK_ApronSkirt.label>
+  <RK_ApronSkirt.description>A simple garment adorned with an apron for daily use.</RK_ApronSkirt.description>
+
+
+  <!-- 여름드레스 더위저항 +7 -->
+
+  <RK_SummerDress.label>Ratkin summer dress</RK_SummerDress.label>
+  <RK_SummerDress.description>A summer dress that provides good ventilation to keep cool during the heat.</RK_SummerDress.description>
+
+
+  <!-- 여름모자 더위저항 +5 -->
+
+  <RK_StrawHat.label>Ratkin straw hat</RK_StrawHat.label>
+  <RK_StrawHat.description>A straw hat made out of hay to protect one's face from sunlight.</RK_StrawHat.description>
+
+
+  <!-- 머플러 추위저항 +4 -->
+
+  <RK_Muffler.label>Ratkin muffler</RK_Muffler.label>
+  <RK_Muffler.description>A shawl worn around the neck for insulation during cold weather.</RK_Muffler.description>
+
+
+  <!-- 가디건 추위저항 +6 -->
+
+  <RK_Cardigan.label>Ratkin cardigan</RK_Cardigan.label>
+  <RK_Cardigan.description>A cardigan worn in addition to clothing to provide additional protection from the cold.</RK_Cardigan.description>
+
+
+  <!-- 털모자 추위저항 +5 -->
+
+  <RK_WoolenHat.label>Ratkin woolen hat</RK_WoolenHat.label>
+  <RK_WoolenHat.description>A woolen hat to keep one's head warm.</RK_WoolenHat.description>
+
+  <RK_CrossBack.label>cross back</RK_CrossBack.label>
+  <RK_CrossBack.description>A simple bag to allow one to carry a little more luggage.</RK_CrossBack.description>
+
+
+  <!-- 가방  운반용량 +20 -->
+
+  <RK_Backpack.label>Ratkin backpack</RK_Backpack.label>
+  <RK_Backpack.description>A backpack to allow one to carry more luggage.</RK_Backpack.description>
+
+
+  <!-- 작업복  재단 속도 +10% 요리속도 +5% 재배속도 5% 언스킬드속도 +5% 동물수집속도 +5% -->
+
+  <RK_WorkerWear.label>Ratkin worker wear</RK_WorkerWear.label>
+  <RK_WorkerWear.description>Easy to wear clothing designed for all manner of work in everyday life.</RK_WorkerWear.description>
+
+
+  <!-- 작업모  식중독 예방 +5% 동물채집량 +5% -->
+
+  <RK_Coif.label>Ratkin coif</RK_Coif.label>
+  <RK_Coif.description>A cap to used to prevent hair from falling over when working.</RK_Coif.description>
+
+
+  <!-- 연구가운 연구 속도 +10% 수술속도 +5% 치료속도 +5% 약조리속도 +5% 제약속도 +5% -->
+
+  <RK_ResearchGown.label>Ratkin research gown</RK_ResearchGown.label>
+  <RK_ResearchGown.description>Clothing worn during research to prevent contamination. Provides protection from minor spills.</RK_ResearchGown.description>
+
+
+  <!-- 공돌이 수술 성공률 +5% 치료품질 +5% -->
+
+  <RK_ResearchGlasses.label>Ratkin glasses</RK_ResearchGlasses.label>
+  <RK_ResearchGlasses.description>Glasses for Ratkin. This compensates for the usual poor eyesight of Ratkin to help in higher intellectual pursuits and also makes them feel a little smarter.</RK_ResearchGlasses.description>
+
+
+  <!-- 탐험복 이동속도 +0.2 더위저항 +10 스탤스효과 +7% 조련확률 +5% 훈련확률 +5% 근접회피 +5% -->
+
+  <RK_ExplorerWear.label>Ratkin explorer wear</RK_ExplorerWear.label>
+  <RK_ExplorerWear.description>Clothing designed for exploration. It is easy to move in and doesn't make much noise when moving around.</RK_ExplorerWear.description>
+
+
+  <!-- 탐험모 이동속도+0.1 더위저항 +10 스탤스효과 +3% -->
+
+  <RK_ExplorerHat.label>Ratkin explorer hat</RK_ExplorerHat.label>
+  <RK_ExplorerHat.description>A hat worn by explorers to protect their face from sunlight.</RK_ExplorerHat.description>
+
+
+  <!-- 쉐프복 요리속도 +15% 해체속도 +5% -->
+
+  <RK_ChefSuit.label>Ratkin chef suit</RK_ChefSuit.label>
+  <RK_ChefSuit.description>Chef dress designed for use in a kitchen to help cook a little faster and decrease the chances of food contamination.</RK_ChefSuit.description>
+
+
+  <!-- 쉐프모자 식중독예방 +12% -->
+
+  <RK_ChefHat.label>Ratkin chef hat</RK_ChefHat.label>
+  <RK_ChefHat.description>Chef hat worn to prevent hair from contaminating food.</RK_ChefHat.description>
+
+
+  <!-- 정원복 수확속도 +15% 수확량 +5% 근접정확도 +5% 근접회피 +10% 이동속도 +0.1 -->
+
+  <RK_GaurdenUniform.label>Ratkin Guardener uniform</RK_GaurdenUniform.label>
+  <RK_GaurdenUniform.description>The Guardener uniform. Worn by those tasked with the important role of "guarding the garden" in Ratkin Society. Only Ratkin with the most skill in both combat can become a Guardener.</RK_GaurdenUniform.description>
+
+
+  <!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
+
+  <RK_WinterRobe.label>Ratkin winter robe</RK_WinterRobe.label>
+  <RK_WinterRobe.description>A winter robe worn in addition to clothes to keep warm in the coldest environments.</RK_WinterRobe.description>
+
+
+  <!-- 군용가방 +30 내구도 +20 -->
+
+  <RK_OutdoorBackpack.label>Ratkin outdoor backpack</RK_OutdoorBackpack.label>
+  <RK_OutdoorBackpack.description>A backpack for outdoor activities. Allows one to carry heavier loads without being encumbered.</RK_OutdoorBackpack.description>
+
+
+  <!-- 제복 사회적영향력 +5% 근접회피찬스 5% 정신임계점 +5% 고통임계점 +10% 날카로움방어 좋은수준 -->
+
+  <RK_OrderUniform.label>Ratkin order uniform</RK_OrderUniform.label>
+  <RK_OrderUniform.description>A modern combat uniform. It gives the wearer confidence and grit so that they can endure a little more pain.</RK_OrderUniform.description>
+
+
+  <!-- 방탄모자 조준속도 +10% 사격정확도 +5% 날카로움방어 좋은수준 -->
+
+  <RK_BulletProofHelmet.label>Ratkin military helmet</RK_BulletProofHelmet.label>
+  <RK_BulletProofHelmet.description>A helmet designed for Ratkin in modern combat. The additional head protection helps reduce the fear of the wearer resulting in better aim.</RK_BulletProofHelmet.description>
+
+
+  <!-- 플랫칼라코트 사회적영향력 +10% 협상 +10% -->
+
+  <RK_FlatColorCoat.label>Ratkin flatcolor coat</RK_FlatColorCoat.label>
+  <RK_FlatColorCoat.description>A sweet, monochrome dress. Comfortable and luxurious.</RK_FlatColorCoat.description>
+
+
+  <!-- 프릴원피스 거래가격개선 +10% 협상 +10% -->
+
+  <RK_FrillOnepiece.label>Ratkin frill onepiece</RK_FrillOnepiece.label>
+  <RK_FrillOnepiece.description>A cute one-piece dress with frilly decorations popular with upper class ladies.</RK_FrillOnepiece.description>
+
+
+  <!-- 코사주 사회적 영향력 10% -->
+
+  <RK_HairCorsage.label>Ratkin hair corsage</RK_HairCorsage.label>
+  <RK_HairCorsage.description>A rose-shaped corsage made from fabric.</RK_HairCorsage.description>
+
+
+  <!-- 리본 거래가격 개선 +10% -->
+
+  <RK_RibbonHairBand.label>Ratkin ribbon hair band</RK_RibbonHairBand.label>
+  <RK_RibbonHairBand.description>A cute little ribbon worn on top of one's head.</RK_RibbonHairBand.description>
+
+
+  <!-- 수녀복 사회적영향력 +10% 치료속도 +10% -->
+
+  <RK_SistersDerss.label>Ratkin nun dress</RK_SistersDerss.label>
+  <RK_SistersDerss.description>A simple dress worn by nuns. The skirt is cut lengthwise on one side for ease of movement.</RK_SistersDerss.description>
+
+
+  <!-- 수녀모자 치료품질 +10% -->
+
+  <RK_SistersVeil.label>Ratkin veil</RK_SistersVeil.label>
+  <RK_SistersVeil.description>A veil worn by nuns. It keeps hair neat.</RK_SistersVeil.description>
+
+
+  <!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
+
+  <RK_EarCostume.label>Ratkin ear costume</RK_EarCostume.label>
+  <RK_EarCostume.description>An ear costume that imitate the ears of Ratkin. Large ears are viewed favourably in Ratkin society. It is not cute at all when used by baseliners.</RK_EarCostume.description>
+
+
+  <!-- 도둑질 보따리 +50 내구도 +20 -->
+
+  <RK_Sack.label>Ratkin sack</RK_Sack.label>
+  <RK_Sack.description>A large sack for carrying many things. Popular among thieves.</RK_Sack.description>
+
+
+  <!-- 특수 부대 복장 -->
+
+  <RK_BattleSuit.label>ratkin battlesuit</RK_BattleSuit.label>
+  <RK_BattleSuit.description>A modern combat suit for assault troops. Designed to allow the wearer to operate even in extreme temperature conditions.</RK_BattleSuit.description>
+
+
+  <!-- 가스마스크 -->
+
+  <RK_Mask.label>Ratkin mask helmet</RK_Mask.label>
+  <RK_Mask.description>A helmet with a mask. Designed for long term combat in toxic environments.</RK_Mask.description>
+
+  <!-- 가스마스크 -->
+
+  <RK_MaskB.label>Ratkin mask helmet</RK_MaskB.label>
+  <RK_MaskB.description>A helmet with a mask. Designed for long term combat in toxic environments.</RK_MaskB.description>
+
+  <!-- 특공 머리띠 -->
+
+  <RK_HeadBand.label>Ratkin head band</RK_HeadBand.label>
+  <RK_HeadBand.description>A red hairband worn by fearless fanatical Ratkin.</RK_HeadBand.description>
+
+
+  <!-- 판금 갑옷 높은 날카로움, 둔탁함 방어력, 느려짐 -->
+
+  <RK_Plate.label>ratkin plate armor</RK_Plate.label>
+  <RK_Plate.description>Plate armor consisting of overlapping plates which allows for greater defense.</RK_Plate.description>
+
+
+  <!-- 판금 투구 높은 날카로움, 둔탁함 방어력, 느려짐 -->
+
+  <RK_PlateHelmA.label>Ratkin plate helm A</RK_PlateHelmA.label>
+  <RK_PlateHelmA.description>A helmet made of metal that offers good head protection but has poor visibility.</RK_PlateHelmA.description>
+
+
+  <!-- 투구 -->
+
+  <RK_PlateHelmB.label>Ratkin plate helm B</RK_PlateHelmB.label>
+  <RK_PlateHelmB.description>A helmet made of metal that offers good head protection. Provides better visibility at the expense of leaving the face unarmored.</RK_PlateHelmB.description>
+
+  <RK_PlateHelmC.label>Ratkin plate helm C</RK_PlateHelmC.label>
+  <RK_PlateHelmC.description>A bucket helmet made of metal that offers good head protection but has poor visibility.</RK_PlateHelmC.description>
+
+
+  <!-- 목제 방패 -->
+
+  <RK_WoodenShield.label>ratkin wooden Shield</RK_WoodenShield.label>
+  <RK_WoodenShield.description>A round shield made of wood used to deflect attacks from the front. Deflection chance is based on wearer's melee skill and material.</RK_WoodenShield.description>
+
+
+  <!-- 철제 방패 -->
+
+  <RK_HeavyShield.label>ratkin heavy Shield</RK_HeavyShield.label>
+  <RK_HeavyShield.description>A metal shield used to deflect attack from the front. Deflection chance is based on wearer's melee skill and material.</RK_HeavyShield.description>
+
+  <!-- 철제 방패 -->
+
+  <RK_HeavyShield_Big.label>ratkin Big heavy Shield</RK_HeavyShield_Big.label>
+  <RK_HeavyShield_Big.description>A large metal shield used to deflect attack from the front. Deflection chance is based on wearer's melee skill and material.</RK_HeavyShield_Big.description>
+
+  <!-- 산타외투 -->
+
+  <RK_SantaRobe.label>santa robe</RK_SantaRobe.label>
+  <RK_SantaRobe.description>A red robe worn to imitate "Santa", an ancient figure from old Earth known to give gifts to good Ratkin.</RK_SantaRobe.description>
+
+
+  <!-- 산타 모자 추위저항 +5 -->
+
+  <RK_SantaHat.label>santa hat</RK_SantaHat.label>
+  <RK_SantaHat.description>A red pointed hat worn to imitate "Santa", an ancient figure from old Earth known to give gifts to good Ratkin.</RK_SantaHat.description>
+
+
+  <!-- 산타 보따리 +50 내구도 +20 -->
+
+  <RK_SantaSack.label>santa package</RK_SantaSack.label>
+  <RK_SantaSack.description>A large sack capable of carrying many gifts.</RK_SantaSack.description>
+
+
+  <!-- 드랍 외투 -->
+
+  <RK_WhiteCoat.label>white coat</RK_WhiteCoat.label>
+  <RK_WhiteCoat.description>A pure white coat made out of quality fabric and carefully finished worn by Ratkin of high-ranking positions.</RK_WhiteCoat.description>
+
+
+  <!-- 로열 외투 -->
+
+  <RK_RoyalRobe.label>royal robe</RK_RoyalRobe.label>
+  <RK_RoyalRobe.description>A long flowing robe embroidered with complex decorative designs. Wildly impractical, its purpose is to mark the wearer as a powerful noble.</RK_RoyalRobe.description>
+
+
+  <!-- 왕관 -->
+
+  <RK_RoyalCrown.label>Ratkin royal crown</RK_RoyalCrown.label>
+  <RK_RoyalCrown.description>A grand crown of metal with an elaborate design. Worn by upper-ranking nobles.</RK_RoyalCrown.description>
+
+  <!-- 로티인형 -->
+
+  <RK_RottiHat.label>Rotti Hat</RK_RottiHat.label>
+  <RK_RottiHat.description>It is a Rotti doll made of cloth. You can carry it around, but it's even more cute when you put it on your head!</RK_RottiHat.description>
+</LanguageData>

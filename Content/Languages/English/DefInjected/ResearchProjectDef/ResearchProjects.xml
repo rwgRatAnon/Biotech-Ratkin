@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PiercingWeapon.label>Piercing weapon</PiercingWeapon.label>
+  <PiercingWeapon.description>Develop melee weapons with increased penetration in an attempt to neutralize heavily armored opponents.</PiercingWeapon.description>
+
+  <MechanicalWeapon.label>Mechanical weapon</MechanicalWeapon.label>
+  <MechanicalWeapon.description>Craft weapons of increased mechanical complexity.</MechanicalWeapon.description>
+
+  <Ballista.label>Ballista</Ballista.label>
+  <Ballista.description>Develop a ballista which can be operated even by the smaller body sized Ratkin.</Ballista.description>
+
+  <Bigmouse.label>Cannon</Bigmouse.label>
+  <Bigmouse.description>Develop a large cannon capable of firing heavy cannonballs to breach fortifications.</Bigmouse.description>
+
+  <Advanced_BallistaBolt.label>Advanced ballista bolt</Advanced_BallistaBolt.label>
+  <Advanced_BallistaBolt.description>Develop variations of ballista bolts for specialized purposes.</Advanced_BallistaBolt.description>
+
+  <MicroOptical.label>Micro-optics</MicroOptical.label>
+  <MicroOptical.description>Replicate human micro-optics technology for Ratkin use to compensate their poor eyesight. Need Ratkin glasses to research.</MicroOptical.description>
+
+  <FlechetteBullet.label>flechette bullet</FlechetteBullet.label>
+  <FlechetteBullet.description>Develop projectiles with greater penetrative capabilities. Flechettes are heavier and standard bullets but are designed to penetrate armor. Need Ratkin glasses to research.</FlechetteBullet.description>
+
+  <PulseTech.label>pulse tech</PulseTech.label>
+  <PulseTech.description>Research how to apply pulse technology to weapons and equipment. Need Ratkin glasses to research.</PulseTech.description>
+
+  <RatkinClothing.label>Ratkin clothing</RatkinClothing.label>
+  <RatkinClothing.description>Design comfortable Ratkin clothing for both specialized work roles and day-to-day use.</RatkinClothing.description>
+
+  <HighClassClothing.label>high class clothing</HighClassClothing.label>
+  <HighClassClothing.description>Design Ratkin clothing for combat and high-class luxury. Need Ratkin glasses to research.</HighClassClothing.description>
+
+
+</LanguageData>

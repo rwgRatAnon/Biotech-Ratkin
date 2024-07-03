@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RatkinVagabondJoin.label>Vagabond</RatkinVagabondJoin.label>
+  <RatkinVagabondJoin.letterLabel>Vagabond</RatkinVagabondJoin.letterLabel>
+  <RatkinVagabondJoin.letterText>During [PAWN_kind] travels, [PAWN_kind] noticed a strange feeling and was drawn to wander to this place.</RatkinVagabondJoin.letterText>
+
+
+</LanguageData>

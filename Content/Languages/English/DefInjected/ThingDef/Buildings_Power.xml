@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_HamsterWheelGenerator.label>hamster wheel generator</RK_HamsterWheelGenerator.label>
+  <RK_HamsterWheelGenerator.description>Generates electricity from running in a large hamster wheel. The amount of power generated is proportional to the user's running speed.</RK_HamsterWheelGenerator.description>
+
+
+</LanguageData>

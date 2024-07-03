@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RK_MagicWand.label>ratkin magic wand</RK_MagicWand.label>
+  <RK_MagicWand.description>Ratkin "magic wand". Used to magically open locked doors or to clean up furniture through high explosives. A sober ratkin would throw it...</RK_MagicWand.description>
+  <RK_MagicWand.tools.0.label>head</RK_MagicWand.tools.0.label>
+  <RK_MagicWand.tools.1.label>edge</RK_MagicWand.tools.1.label>
+
+
+</LanguageData>

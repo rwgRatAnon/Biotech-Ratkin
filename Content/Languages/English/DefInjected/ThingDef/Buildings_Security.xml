@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 직사 발리스타 -->
+
+  <RK_Ballista_Strait_Body.label>ballista</RK_Ballista_Strait_Body.label>
+  <RK_Ballista_Strait_Body.description>A siege engine capable of firing large arrows at great distances. It is designed to be operated even by Ratkins.</RK_Ballista_Strait_Body.description>
+
+  <RK_Turret_Ballista_Strait.label>ballista</RK_Turret_Ballista_Strait.label>
+  <RK_Turret_Ballista_Strait.description>A siege engine capable of firing large arrows at great distances. It is designed to be operated even by Ratkins.</RK_Turret_Ballista_Strait.description>
+
+
+  <!-- 발리스타 탄 (일반) -->
+
+  <BallistaBolt_Normal.label>ballista bolt (normal)</BallistaBolt_Normal.label>
+  <BallistaBolt_Normal.description>A ballista bolt. Survival is unlikely if the target gets hit directly by this big arrow.</BallistaBolt_Normal.description>
+
+  <Bullet_BallistaBolt_Normal.label>ballista bolt (normal)</Bullet_BallistaBolt_Normal.label>
+
+
+  <!-- 발리스타 탄 (중량) -->
+
+  <BallistaBolt_Heavy.label>ballista bolt (HE)</BallistaBolt_Heavy.label>
+  <BallistaBolt_Heavy.description>A specialized ballista bolt tipped with an explosive warhead to increase lethality over a wider area.</BallistaBolt_Heavy.description>
+
+  <Bullet_BallistaBolt_HE.label>ballista bolt (HE)</Bullet_BallistaBolt_HE.label>
+
+
+  <!-- 발리스타 탄 (고관통) -->
+
+  <BallistaBolt_AP.label>ballista bolt (AP)</BallistaBolt_AP.label>
+  <BallistaBolt_AP.description>A specialized ballista bolt designed to penetrate armor, it can penetrate multiple targets along its firing line.</BallistaBolt_AP.description>
+
+  <Bullet_BallistaBolt_AP.label>ballista bolt (AP)</Bullet_BallistaBolt_AP.label>
+
+  <!-- 찍찍포 -->
+
+  <RK_Cannon_Strait_Body.label>Ratkin Cannon</RK_Cannon_Strait_Body.label>
+  <RK_Cannon_Strait_Body.description>A cannon that can fire polished stones at a long distance. Developed to subdue enemies from a distance, but cannot shoot over hills. Nicknamed Squeak Cannon by its crews.</RK_Cannon_Strait_Body.description>
+
+  <RK_Turret_Cannon_Strait.label>Cannon</RK_Turret_Cannon_Strait.label>
+  <RK_Turret_Cannon_Strait.description>A cannon that can fire polished stones at a long distance. Developed to subdue enemies from a distance, but cannot shoot over hills. Nicknamed Squeak Cannon by its crews.</RK_Turret_Cannon_Strait.description>
+
+  <!-- 빅마우스 -->
+
+  <Big_mouse.label>Ratkin Cannon Shell</Big_mouse.label>
+  <Big_mouse.description>A cannon shell that made out of polished stone encased in steel.</Big_mouse.description>
+
+  <Bullet_Big_mouse.label>Ratkin Cannon Shell</Bullet_Big_mouse.label>
+</LanguageData>
