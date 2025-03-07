@@ -134,9 +134,7 @@
 					<RatkinNoble>8</RatkinNoble>
 				</traders>
                 <carriers>
-                    <Muffalo>7</Muffalo>
-                    <Bison>6</Bison>
-                    <Horse>4</Horse>
+                    <Ratkin_KingHamster>7</Ratkin_KingHamster>
                 </carriers>
 				<guards>
 					<RatkinCombatant>10</RatkinCombatant>
