@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HairDef Name="RatkinHairBase" Abstract="True">
+		<category>RK_Style</category>
+		<requiredGene>Hair_Ratkin</requiredGene>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_Braided</defName>
+		<label>Braided</label>
+		<styleGender>Female</styleGender>
+		<texPath>Hair/RK_Braided</texPath>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_BraidedB</defName>
+		<label>BraidedB</label>
+		<styleGender>Female</styleGender>
+		<texPath>Hair/RK_BraidedB</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_middl</defName>
+		<label>middl</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/RK_middl</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_side_tail</defName>
+		<label>side tail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/RK_side_tail</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_twin5</defName>
+		<label>twin tail</label>
+		<styleGender>Female</styleGender>
+		<texPath>Hair/RK_twin5</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_WavelongA</defName>
+		<label>WavelongA</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/RK_WavelongA</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_LongA</defName>
+		<label>long hairA</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/LongA</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_LongB</defName>
+		<label>long hairB</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/LongB</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_LongD</defName>
+		<label>long hairD</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/LongD</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_LongE</defName>
+		<label>long hairE</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/LongE</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_PonyA</defName>
+		<label>ponytailA</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/ponyA</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_sidePonyA</defName>
+		<label>side ponytailA</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/side_ponyA</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_twin2</defName>
+		<label>twin tail2</label>
+		<styleGender>Female</styleGender>
+		<texPath>Hair/twin2</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_twin3</defName>
+		<label>twin tail3</label>
+		<styleGender>Female</styleGender>
+		<texPath>Hair/twin3</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_twin4</defName>
+		<label>twin tail4</label>
+		<styleGender>Female</styleGender>
+		<texPath>Hair/twin4</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_twinA</defName>
+		<label>twin tailA</label>
+		<styleGender>Female</styleGender>
+		<texPath>Hair/twinA</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_twin6</defName>
+		<label>twin tail</label>
+		<styleGender>Female</styleGender>
+		<texPath>Hair/twin5</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_Middle2</defName>
+		<label>middle2</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/RK_middl2</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+	<HairDef ParentName="RatkinHairBase">
+		<defName>RK_MPony</defName>
+		<label>ponytail</label>
+		<styleGender>Any</styleGender>
+		<texPath>Hair/pony</texPath>
+		<styleTags>
+			<li>RK_Style</li>
+		</styleTags>
+		<requiredGene>Hair_Ratkin</requiredGene>
+	</HairDef>
+</Defs>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
+<!--
   <RK_FakeEar.label>fake Ratkin ear</RK_FakeEar.label>
   <RK_FakeEar.description>A fake Ratkin ear. Large ears are viewed favourably in Ratkin society so replacements are necessary when sustaining heavy ear injuries.</RK_FakeEar.description>
 
@@ -9,6 +9,6 @@
 
   <RK_BionicTail.label>bionic tail</RK_BionicTail.label>
   <RK_BionicTail.description>An advanced artificial Ratkin tail. It also has a simple AI built in that mimics the motion of a real tail when moving.</RK_BionicTail.description>
-
+-->
 
 </LanguageData>

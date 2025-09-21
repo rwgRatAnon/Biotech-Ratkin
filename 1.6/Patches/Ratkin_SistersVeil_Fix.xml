@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationAdd">
+<xpath>/Defs/ThingDef[defName = "RK_SistersVeil"]/apparel</xpath>
+    <value>
+	 <renderSkipFlags>
+        <li>None</li>
+     </renderSkipFlags>
+	      <drawData>
+			       <defaultData>
+        	          <layer>70</layer>
+        	       </defaultData>
+          </drawData>
+		  	  	 <renderNodeProperties>				   
+			      <li>
+					<debugLabel>Light</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
+                    <texPath>Apparel/RK_SistersVeilB</texPath>
+                    <baseLayer>0</baseLayer>
+                    <parentTagDef>Head</parentTagDef>
+                    <pawnType>Any</pawnType>
+	                <drawData>
+			             <defaultData>
+        	                  <layer>-10</layer>
+        	             </defaultData>
+                    </drawData>
+                  </li>
+				 </renderNodeProperties>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "RK_SistersVeil"]/apparel</xpath>
+      <value>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+      </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "RK_SistersDress"]/apparel</xpath>
+      <value>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+      </value>
+</Operation>
+
+</Patch>

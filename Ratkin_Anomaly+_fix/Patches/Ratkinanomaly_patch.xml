@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+<operations>
+	<li Class="PatchOperationRemove">
+		<xpath>Defs/AlienRace.AlienBackstoryDef[defName="Ratkin_RuralTeacher"]</xpath>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+			<value>
+				<BackstoryDef>
+					<defName>Ratkin_RuralTeacher</defName>
+					<title>Ratkin Rural Teacher</title>
+					<titleShort>Teacher</titleShort>
+					<baseDesc>[PAWN_nameDef] was a teacher sent to the countryside to help teach. [PAWN_pronoun] hopes to teach children enough knowledge, so that they will no longer be trapped in the mountains, and can go to various cities to pursue their ideals.</baseDesc>
+					<bodyTypeMale>Thin</bodyTypeMale>
+					<bodyTypeFemale>Thin</bodyTypeFemale>
+					<slot>Adulthood</slot>
+					<skillGains>
+						<Mining>-2</Mining>
+						<Artistic>10</Artistic>
+						<Intellectual>6</Intellectual>
+					</skillGains>
+					<spawnCategories>
+						<li>RA_RatkinRuralTeacher</li>
+					</spawnCategories>
+					<requiresSpawnCategory>true</requiresSpawnCategory>
+					<forcedTraits>
+						<Kind>0</Kind>
+						<FastLearner>0</FastLearner>
+					</forcedTraits>
+				</BackstoryDef>
+			</value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/BackstoryDef[defName="Ratkin_Student"]/spawnCategories</xpath>
+			<value>
+				<li>RA_RatkinRuralTeacher</li>
+			</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RA_DetectiveDress"]/apparel/wornGraphicPath</xpath>
+			<value>
+				<wornGraphicPath>Adjusted_RA_Apparels/RA_DetectiveDress</wornGraphicPath>
+			</value>
+	</li>
+
+	<!-- RA_DetectiveHat -->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RA_DetectiveHat"]/apparel/wornGraphicPath</xpath>
+			<value>
+				<wornGraphicPath>Adjusted_RA_Apparels/RA_DetectiveHat</wornGraphicPath>
+			</value>
+	</li>
+
+	<!-- RA_PaladinArmor -->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RA_PaladinArmor"]/apparel/wornGraphicPath</xpath>
+			<value>
+				<wornGraphicPath>Adjusted_RA_Apparels/RA_PaladinArmor</wornGraphicPath>
+			</value>
+	</li>
+
+	<!-- RA_PaladinCoronet -->
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RA_PaladinCoronet"]/apparel/wornGraphicPath</xpath>
+			<value>
+				<wornGraphicPath>Adjusted_RA_Apparels/RA_PaladinCoronet</wornGraphicPath>
+			</value>
+	</li>
+
+	<!-- RA_PaladinHood -->
+	<li Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="RA_PaladinHood"]/apparel/wornGraphicPath</xpath>
+		<value>
+			<wornGraphicPath>Adjusted_RA_Apparels/RA_PaladinHood</wornGraphicPath>
+		</value>
+	</li>
+
+</operations>
+</Operation>
+</Patch>

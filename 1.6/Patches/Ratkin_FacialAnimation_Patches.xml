@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>[NL] Facial Animation - WIP</li>
+	</mods>
+<match Class="PatchOperationSequence">
+<success>Always</success>
+	<operations>
+		<li Class="PatchOperationRemove">
+		<xpath>/Defs/FacialAnimation.HeadTypeDef[defName="Ratkin_Head" or defName="Ratkin_HeadPointy"]/raceName</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/FacialAnimation.HeadTypeDef[defName="Ratkin_Head" or defName="Ratkin_HeadPointy"]</xpath>
+		<value>
+			<targetGeneDefs>
+				<li>RatxenoFA</li>
+			</targetGeneDefs>
+		</value>
+		</li>
+
+		<li Class="PatchOperationRemove">
+		<xpath>/Defs/FacialAnimation.BrowTypeDef[defName="Ratkin_BrowNormal" or defName="Ratkin_BrowCool"or defName="Ratkin_Futomayu"]/raceName</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/FacialAnimation.BrowTypeDef[defName="Ratkin_BrowNormal" or defName="Ratkin_BrowCool"or defName="Ratkin_Futomayu"]</xpath>
+		<value>
+			<targetGeneDefs>
+				<li>RatxenoFA</li>
+			</targetGeneDefs>
+		</value>
+		</li>
+
+		<li Class="PatchOperationRemove">
+		<xpath>/Defs/FacialAnimation.EmotionTypeDef[defName="Ratkin_EmotionNormal"]/raceName</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/FacialAnimation.EmotionTypeDef[defName="Ratkin_EmotionNormal"]</xpath>
+		<value>
+			<targetGeneDefs>
+				<li>RatxenoFA</li>
+			</targetGeneDefs>
+		</value>
+		</li>
+
+		<li Class="PatchOperationRemove">
+		<xpath>/Defs/FacialAnimation.EyeballTypeDef[defName="Ratkin_EyeNormal" or defName="Ratkin_EyePointy" or defName="Ratkin_EyeStars" or defName="Ratkin_EyeWide" or defName="Ratkin_EyeStare" or defName="Ratkin_EyeGuruGuru"]/raceName</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/FacialAnimation.EyeballTypeDef[defName="Ratkin_EyeNormal" or defName="Ratkin_EyePointy" or defName="Ratkin_EyeStars" or defName="Ratkin_EyeWide" or defName="Ratkin_EyeStare" or defName="Ratkin_EyeGuruGuru"]</xpath>
+		<value>
+			<targetGeneDefs>
+				<li>RatxenoFA</li>
+			</targetGeneDefs>
+		</value>
+		</li>
+
+		<li Class="PatchOperationRemove">
+		<xpath>/Defs/FacialAnimation.LidOptionTypeDef[defName="Ratkin_LidOptionNormal"]/raceName</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/FacialAnimation.LidOptionTypeDef[defName="Ratkin_LidOptionNormal"]</xpath>
+		<value>
+			<targetGeneDefs>
+				<li>RatxenoFA</li>
+			</targetGeneDefs>
+		</value>
+		</li>
+
+		<li Class="PatchOperationRemove">
+		<xpath>/Defs/FacialAnimation.LidTypeDef[defName="Ratkin_LidNormal" or defName="Ratkin_LidPointy" or defName="Ratkin_LidSleepy" or defName="Ratkin_LidCute"]/raceName</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/FacialAnimation.LidTypeDef[defName="Ratkin_LidNormal" or defName="Ratkin_LidPointy" or defName="Ratkin_LidSleepy" or defName="Ratkin_LidCute"]</xpath>
+		<value>
+			<targetGeneDefs>
+				<li>RatxenoFA</li>
+			</targetGeneDefs>
+		</value>
+		</li>
+
+		<li Class="PatchOperationRemove">
+		<xpath>/Defs/FacialAnimation.MouthTypeDef[defName="Ratkin_MouthNormal" or defName="Ratkin_MouthTooth"]/raceName</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/FacialAnimation.MouthTypeDef[defName="Ratkin_MouthNormal" or defName="Ratkin_MouthTooth"]</xpath>
+		<value>
+			<targetGeneDefs>
+				<li>RatxenoFA</li>
+			</targetGeneDefs>
+		</value>
+		</li>
+
+		<li Class="PatchOperationRemove">
+		<xpath>/Defs/FacialAnimation.SkinTypeDef[defName="Ratkin_SkinNormal" or defName="Ratkin_SkinRightEye" or defName="Ratkin_SkinLeftChin" or defName="Ratkin_SkinFreckled"]/raceName</xpath>
+		</li>
+		<li Class="PatchOperationAdd">
+		<xpath>/Defs/FacialAnimation.SkinTypeDef[defName="Ratkin_SkinNormal" or defName="Ratkin_SkinRightEye" or defName="Ratkin_SkinLeftChin" or defName="Ratkin_SkinFreckled"]</xpath>
+		<value>
+			<targetGeneDefs>
+				<li>RatxenoFA</li>
+			</targetGeneDefs>
+		</value>
+		</li>
+	</operations>
+</match>
+</Operation>
+</Patch>

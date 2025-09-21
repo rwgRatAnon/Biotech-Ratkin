@@ -4,7 +4,7 @@
   <!-- 기본 옷 재배속도+5% 요리속도 +5% -->
 
   <RK_ApronSkirt.label>Ratkin apron skirt</RK_ApronSkirt.label>
-  <RK_ApronSkirt.description>A simple garment adorned with an apron for daily use.</RK_ApronSkirt.description>
+  <RK_ApronSkirt.description>A simple garment adorned with an apron for daily use. Wearable by children.</RK_ApronSkirt.description>
 
 
   <!-- 여름드레스 더위저항 +7 -->
@@ -97,13 +97,13 @@
   <!-- 정원복 수확속도 +15% 수확량 +5% 근접정확도 +5% 근접회피 +10% 이동속도 +0.1 -->
 
   <RK_GaurdenUniform.label>Ratkin Guardener uniform</RK_GaurdenUniform.label>
-  <RK_GaurdenUniform.description>The Guardener uniform. Worn by those tasked with the important role of "guarding the garden" in Ratkin Society. Only Ratkin with the most skill in both combat can become a Guardener.</RK_GaurdenUniform.description>
+  <RK_GaurdenUniform.description>The Guardener uniform. Worn by those tasked with the important role of "guarding the garden" in Ratkin Society. Only Ratkin with the most skill in both combat can become a Guardener. Wearable by children.</RK_GaurdenUniform.description>
 
 
   <!-- 겨울외투 사회적영향력 5% 추위저항 +35 -->
 
   <RK_WinterRobe.label>Ratkin winter robe</RK_WinterRobe.label>
-  <RK_WinterRobe.description>A winter robe worn in addition to clothes to keep warm in the coldest environments.</RK_WinterRobe.description>
+  <RK_WinterRobe.description>A winter robe worn in addition to clothes to keep warm in the coldest environments. Wearable by children.</RK_WinterRobe.description>
 
 
   <!-- 군용가방 +30 내구도 +20 -->
@@ -115,13 +115,13 @@
   <!-- 제복 사회적영향력 +5% 근접회피찬스 5% 정신임계점 +5% 고통임계점 +10% 날카로움방어 좋은수준 -->
 
   <RK_OrderUniform.label>Ratkin order uniform</RK_OrderUniform.label>
-  <RK_OrderUniform.description>A modern combat uniform. It gives the wearer confidence and grit so that they can endure a little more pain.</RK_OrderUniform.description>
+  <RK_OrderUniform.description>A modern combat uniform. It gives the wearer confidence and grit so that they can endure a little more pain. Wearable by children.</RK_OrderUniform.description>
 
 
   <!-- 방탄모자 조준속도 +10% 사격정확도 +5% 날카로움방어 좋은수준 -->
 
   <RK_BulletProofHelmet.label>Ratkin military helmet</RK_BulletProofHelmet.label>
-  <RK_BulletProofHelmet.description>A helmet designed for Ratkin in modern combat. The additional head protection helps reduce the fear of the wearer resulting in better aim.</RK_BulletProofHelmet.description>
+  <RK_BulletProofHelmet.description>A helmet designed for Ratkin in modern combat. The additional head protection helps reduce the fear of the wearer resulting in better aim. Wearable by children.</RK_BulletProofHelmet.description>
 
 
   <!-- 플랫칼라코트 사회적영향력 +10% 협상 +10% -->
@@ -150,8 +150,8 @@
 
   <!-- 수녀복 사회적영향력 +10% 치료속도 +10% -->
 
-  <RK_SistersDerss.label>Ratkin nun dress</RK_SistersDerss.label>
-  <RK_SistersDerss.description>A simple dress worn by nuns. The skirt is cut lengthwise on one side for ease of movement.</RK_SistersDerss.description>
+  <RK_SistersDress.label>Ratkin nun dress</RK_SistersDress.label>
+  <RK_SistersDress.description>A simple dress worn by nuns. The skirt is cut lengthwise on one side for ease of movement. Wearable by children.</RK_SistersDress.description>
 
 
   <!-- 수녀모자 치료품질 +10% -->

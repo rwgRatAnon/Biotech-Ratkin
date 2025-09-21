@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+    <defName>RK_Spacesuit</defName>
+    <label>Ratkin Spacesuit</label>
+    <description>A multi-layered composite jumpsuit with reinforced outer materials, integrating basic oxygen supply and temperature control systems. Allows Ratkin to perform various tasks comfortably and efficiently.</description>
+    <techLevel>Spacer</techLevel>
+    <tickerType>Normal</tickerType>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <researchPrerequisite>OrbitalTech</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers Inherit="false">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <graphicData>
+      <texPath>ApparelEX/RK_Apparel_Expanded/RK_Spacesuit/RK_Spacesuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>Sellable</tradeability>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <generateCommonality>1</generateCommonality>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>80</Steel>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+    <statBases>
+      <WorkToMake>48000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.46</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.49</ArmorRating_Blunt>
+      <ArmorRating_Heat>6.6</ArmorRating_Heat>
+      <Insulation_Cold>90</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+      <EquipDelay>14</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.5</VacuumResistance>
+      <MoveSpeed>-0.4</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <developmentalStageFilter MayRequire="Ludeon.RimWorld.Biotech">Child,Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>ApparelEX/RK_Apparel_Expanded/RK_Spacesuit/RK_Spacesuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+    </apparel>
+</ThingDef>
+
+<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
+	<defName>RK_SpaceCirclet</defName>
+    <label>Ratkin Space Circlet</label>
+    <description>A special circlet that generates a transparent protective field covering the head, offering clearer and wider visibility than traditional space helmets. Developed by the Ratkin Aero-Spatial Engineering &amp; Exploration Directorate (R.A.S.E.E.D.) through reverse-engineering shield technology, perfectly adapted for Ratkin physiology.</description>
+    <techLevel>Spacer</techLevel>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <researchPrerequisite>OrbitalTech</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers Inherit="false">
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelNoble</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>ApparelEX/RK_Apparel_Expanded/RK_SpaceCirclet/RK_SpaceCirclet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.68</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.54</ArmorRating_Blunt>
+      <ArmorRating_Heat>6.6</ArmorRating_Heat>
+      <Insulation_Cold>6</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.7</VacuumResistance>
+      <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+    </equippedStatOffsets>
+    <generateCommonality>0.1</generateCommonality>
+    <costList>
+	  <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>40</Steel>
+	  <Plasteel>10</Plasteel>
+    </costList>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter MayRequire="Ludeon.RimWorld.Biotech">Child,Adult</developmentalStageFilter>
+      <immuneToToxGasExposure>true</immuneToToxGasExposure>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <wornGraphicPath>ApparelEX/RK_Apparel_Expanded/RK_SpaceCirclet/RK_SpaceCirclet</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <renderNodeProperties>
+        <li>
+          <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
+          <texPath>ApparelEX/RK_Apparel_Expanded/RK_SpaceCirclet/RK_SpaceCircletlight</texPath>
+          <baseLayer>0</baseLayer>
+          <parentTagDef>Head</parentTagDef>
+          <pawnType>Any</pawnType>
+          <shaderTypeDef>MoteGlow</shaderTypeDef>
+          <drawData>
+            <defaultData>
+              <layer>99</layer>
+            </defaultData>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+    </apparel>
+</ThingDef>
+  
+<!--
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
+		<defName>RK_Placeholder</defName>
+		<label>placeholder</label>
+		<description>placeholder</description>
+		<graphicData>
+			<texPath>ApparelEX/PNRoyalmaid</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<equippedStatOffsets>
+			<PlantWorkSpeed>0.05</PlantWorkSpeed>
+			<CookSpeed>0.05</CookSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<developmentalStageFilter MayRequire="Ludeon.RimWorld.Biotech">Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+			<wornGraphicPath>ApparelEX/PNRoyalmaid</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>RK_Worker</li>
+				<li>RK_Servant</li>
+				<li>RK_Maid</li>
+				<li>RK_1Tier</li>
+				<li>RK_Thief</li>
+			</tags>
+		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		</apparel>
+	</ThingDef>
+-->
+
+<!--
+
+	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
+		<defName>RK_Hat_Placeholder</defName>
+		<label>placeholder</label>
+		<description>placeholder</description>
+		<graphicData>
+			<texPath>Apparel/RK_BulletProofHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costList>
+			<DevilstrandCloth>25</DevilstrandCloth>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>1</Mass>			
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>			
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<developmentalStageFilter MayRequire="Ludeon.RimWorld.Biotech">Child, Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/RK_BulletProofHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<tags>
+				<li>RK_Soldier</li>
+				<li>RK_3Tier</li>
+				<li>RK_RoyalCombatGear</li>
+			</tags>
+		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>HighClassClothing</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+-->
+
+</Defs>

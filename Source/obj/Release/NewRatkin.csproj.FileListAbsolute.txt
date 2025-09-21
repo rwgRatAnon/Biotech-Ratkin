@@ -1,0 +1,12 @@
+C:\Games\RimWorld.Odyssey-P2P\Mods\Biotech-Ratkin\Source\bin\Release\NewRatkin.dll
+C:\Games\RimWorld.Odyssey-P2P\Mods\Biotech-Ratkin\Source\bin\Release\NewRatkin.pdb
+C:\Games\RimWorld.Odyssey-P2P\Mods\Biotech-Ratkin\Source\obj\Release\NewRatkin.csproj.AssemblyReference.cache
+C:\Games\RimWorld.Odyssey-P2P\Mods\Biotech-Ratkin\Source\obj\Release\NewRatkin.csproj.CoreCompileInputs.cache
+C:\Games\RimWorld.Odyssey-P2P\Mods\Biotech-Ratkin\Source\obj\Release\NewRatkin.dll
+C:\Games\RimWorld.Odyssey-P2P\Mods\Biotech-Ratkin\Source\obj\Release\NewRatkin.pdb
+C:\Games\RimWorld\Mods\Biotech-Ratkin\Source\obj\Release\NewRatkin.csproj.AssemblyReference.cache
+C:\Games\RimWorld\Mods\Biotech-Ratkin\Source\obj\Release\NewRatkin.csproj.CoreCompileInputs.cache
+C:\Games\RimWorld\Mods\Biotech-Ratkin\Source\obj\Release\NewRatkin.dll
+C:\Games\RimWorld\Mods\Biotech-Ratkin\Source\obj\Release\NewRatkin.pdb
+C:\Games\RimWorld\Mods\Biotech-Ratkin\Source\bin\Release\NewRatkin.dll
+C:\Games\RimWorld\Mods\Biotech-Ratkin\Source\bin\Release\NewRatkin.pdb

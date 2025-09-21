@@ -3,20 +3,20 @@
 	<name>Biotech Ratkin</name>
 	<author>ratfag</author>
   <supportedVersions>
-	<li>1.4</li>
-	<li>1.5</li>
+	<li>1.6</li>
   </supportedVersions>
-  <packageId>rat.xenoratmk2</packageId>
+  <packageId>rat.xenoratmk3</packageId>
   <modDependencies>
   </modDependencies>
-  <loadBefore>
-    <li>FS.ReviaRaceBiotech</li>
-  </loadBefore>
   <description>
-	Ratkin but betterer
+	Ratkins, no HAR required (IN SPAAAAACE!)
   </description>
+  <loadBefore>
+    <li>fxz.ratkinanomaly.update</li>
+  </loadBefore>
   <loadAfter>
     <li>nals.facialanimation</li>
+    <li>fxz.ratkin.facialanimation</li>
   </loadAfter>
   <incompatibleWith>
     <li>solaris.ratkinracemod</li>
