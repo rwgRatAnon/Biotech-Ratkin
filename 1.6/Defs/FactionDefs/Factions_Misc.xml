@@ -176,6 +176,16 @@
 			<li>(0.45, 0.50, 0.30)</li>
 			<li>(0.65, 0.60, 0.20)</li>
 		</colorSpectrum>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Ratkin_Mouse>0.30</Ratkin_Mouse>
+				<Ratkin_Mole>0.15</Ratkin_Mole>
+				<Ratkin_LabRat>0.05</Ratkin_LabRat>
+				<Ratkin_Hamster>0.15</Ratkin_Hamster>
+				<Ratkin_Squirrel>0.20</Ratkin_Squirrel>
+				<Ratkin_Vole>0.15</Ratkin_Vole>
+			</xenotypeChances>
+		</xenotypeSet>
 	</FactionDef>
 	<!-- <FactionDef ParentName="RatkinLandFactionBase"> -->
 	<!-- <defName>RatkinCaravan</defName> -->
