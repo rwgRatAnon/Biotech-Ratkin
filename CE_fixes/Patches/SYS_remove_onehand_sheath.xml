@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!--
+	<Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[
+			defName="RK_Gunlance_NormalType" or
+			defName="RK_Gunlance_SpreadType" or
+			defName="RK_Dagger" or
+			defName="RK_OneHanded" or
+			defName="RK_LongSword" or
+			defName="RK_Mace" or
+			defName="RK_LightLance" or
+			defName="RK_TwoHanded" or
+			defName="RK_HeavyLance" or
+			defName="RK_Spear" or
+			defName="RK_Halberd"
+			]/comps/li[@Class="SYS.CompProperties_WeaponExtention"]</xpath>
+    </Operation>
+	-->
+	
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[
+			defName="RK_Dagger" or
+			defName="RK_OneHanded" or
+			defName="RK_Mace" or
+			defName="RK_TwoHanded" or
+			defName="RK_LongSword"
+			]/comps/li[@Class="SYS.CompProperties_Sheath"]</xpath>
+    </Operation>
+</Patch>

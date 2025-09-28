@@ -174,7 +174,7 @@
 
   <!-- 특수 부대 복장 -->
 
-  <RK_BattleSuit.label>ratkin battlesuit</RK_BattleSuit.label>
+  <RK_BattleSuit.label>Ratkin battlesuit</RK_BattleSuit.label>
   <RK_BattleSuit.description>A modern combat suit for assault troops. Designed to allow the wearer to operate even in extreme temperature conditions.</RK_BattleSuit.description>
 
 
@@ -196,7 +196,7 @@
 
   <!-- 판금 갑옷 높은 날카로움, 둔탁함 방어력, 느려짐 -->
 
-  <RK_Plate.label>ratkin plate armor</RK_Plate.label>
+  <RK_Plate.label>Ratkin plate armor</RK_Plate.label>
   <RK_Plate.description>Plate armor consisting of overlapping plates which allows for greater defense.</RK_Plate.description>
 
 
@@ -217,47 +217,47 @@
 
   <!-- 목제 방패 -->
 
-  <RK_WoodenShield.label>ratkin wooden Shield</RK_WoodenShield.label>
+  <RK_WoodenShield.label>Ratkin wooden shield</RK_WoodenShield.label>
   <RK_WoodenShield.description>A round shield made of wood used to deflect attacks from the front. Deflection chance is based on wearer's melee skill and material.</RK_WoodenShield.description>
 
 
   <!-- 철제 방패 -->
 
-  <RK_HeavyShield.label>ratkin heavy Shield</RK_HeavyShield.label>
+  <RK_HeavyShield.label>Ratkin heavy shield</RK_HeavyShield.label>
   <RK_HeavyShield.description>A metal shield used to deflect attack from the front. Deflection chance is based on wearer's melee skill and material.</RK_HeavyShield.description>
 
   <!-- 철제 방패 -->
 
-  <RK_HeavyShield_Big.label>ratkin Big heavy Shield</RK_HeavyShield_Big.label>
+  <RK_HeavyShield_Big.label>Ratkin big heavy shield</RK_HeavyShield_Big.label>
   <RK_HeavyShield_Big.description>A large metal shield used to deflect attack from the front. Deflection chance is based on wearer's melee skill and material.</RK_HeavyShield_Big.description>
 
   <!-- 산타외투 -->
 
-  <RK_SantaRobe.label>santa robe</RK_SantaRobe.label>
+  <RK_SantaRobe.label>Santa robe</RK_SantaRobe.label>
   <RK_SantaRobe.description>A red robe worn to imitate "Santa", an ancient figure from old Earth known to give gifts to good Ratkin.</RK_SantaRobe.description>
 
 
   <!-- 산타 모자 추위저항 +5 -->
 
-  <RK_SantaHat.label>santa hat</RK_SantaHat.label>
+  <RK_SantaHat.label>Santa hat</RK_SantaHat.label>
   <RK_SantaHat.description>A red pointed hat worn to imitate "Santa", an ancient figure from old Earth known to give gifts to good Ratkin.</RK_SantaHat.description>
 
 
   <!-- 산타 보따리 +50 내구도 +20 -->
 
-  <RK_SantaSack.label>santa package</RK_SantaSack.label>
+  <RK_SantaSack.label>Santa package</RK_SantaSack.label>
   <RK_SantaSack.description>A large sack capable of carrying many gifts.</RK_SantaSack.description>
 
 
   <!-- 드랍 외투 -->
 
-  <RK_WhiteCoat.label>white coat</RK_WhiteCoat.label>
+  <RK_WhiteCoat.label>White coat</RK_WhiteCoat.label>
   <RK_WhiteCoat.description>A pure white coat made out of quality fabric and carefully finished worn by Ratkin of high-ranking positions.</RK_WhiteCoat.description>
 
 
   <!-- 로열 외투 -->
 
-  <RK_RoyalRobe.label>royal robe</RK_RoyalRobe.label>
+  <RK_RoyalRobe.label>Royal robe</RK_RoyalRobe.label>
   <RK_RoyalRobe.description>A long flowing robe embroidered with complex decorative designs. Wildly impractical, its purpose is to mark the wearer as a powerful noble.</RK_RoyalRobe.description>
 
 

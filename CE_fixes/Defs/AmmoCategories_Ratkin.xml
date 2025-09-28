@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RKHomemade</defName>
+		<label>Homemade</label>
+		<labelShort>HM</labelShort>
+		<description>Homemade bullets emerge in environments rife with chaos and conflict, where quality assurance is virtually nonexistent. These rudimentary rounds, crafted in makeshift workshops, fall significantly short of standard military-grade ammunition in terms of accuracy and reliability. However, their low material costs and minimal production time make these deficiencies somewhat tolerable under desperate circumstances.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RKFlechette</defName>
+		<label>Flechette</label>
+		<labelShort>FLCH</labelShort>
+		<description>The flechette is an experimental munition that, owing to unmet material technology standards, necessitated an innovative approach. Crafted from specialized materials, this ammunition exhibits exceptional penetrative capabilities but falls short in terms of destructive power.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RK_CrossbowBolt</defName>
+		<label>Bolt</label>
+	</CombatExtended.AmmoCategoryDef>
+			
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RKBallistaBolt</defName>
+		<label>Ballista Bolt</label>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RKBallistaBolt_Fire</defName>
+		<label>Flaming Ballista Bolt</label>
+	</CombatExtended.AmmoCategoryDef>
+			
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RKBallistaBolt_AP</defName>
+		<label>Ballista Bodkin Bolt</label>
+	</CombatExtended.AmmoCategoryDef>
+	
+</Defs>

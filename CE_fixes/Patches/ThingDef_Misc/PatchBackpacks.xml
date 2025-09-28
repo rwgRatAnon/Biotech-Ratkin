@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RK_Backpack"]/apparel/wornGraphicPath</xpath>
+    <value>
+      <wornGraphicPath>RatApparelsCE/RK_Backpack</wornGraphicPath>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RK_CrossBack"]/apparel/wornGraphicPath</xpath>
+    <value>
+      <wornGraphicPath>RatApparelsCE/RK_CrossBack</wornGraphicPath>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RK_OutdoorBackpack"]/apparel/wornGraphicPath</xpath>
+    <value>
+      <wornGraphicPath>RatApparelsCE/RK_OutdoorBackpack</wornGraphicPath>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RK_Sack"]/apparel/wornGraphicPath</xpath>
+    <value>
+      <wornGraphicPath>RatApparelsCE/RK_Sack</wornGraphicPath>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="RK_SantaSack"]/apparel/wornGraphicPath</xpath>
+    <value>
+      <wornGraphicPath>RatApparelsCE/RK_SantaSack</wornGraphicPath>
+    </value>
+  </Operation>
+
+</Patch>

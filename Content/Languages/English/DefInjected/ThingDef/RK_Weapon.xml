@@ -35,7 +35,7 @@
 
   <!-- 기본 근접값은  초당 8.84 -->
 
-  <RK_LongSword.label>Ratkin longSword</RK_LongSword.label>
+  <RK_LongSword.label>Ratkin guardening sword</RK_LongSword.label>
   <RK_LongSword.description>A sword used by Guardeners tasked with protecting the fields and gardens. A versatile cutting tool for both plant work and in combat.</RK_LongSword.description>
   <RK_LongSword.tools.0.label>point</RK_LongSword.tools.0.label>
   <RK_LongSword.tools.1.label>edge</RK_LongSword.tools.1.label>

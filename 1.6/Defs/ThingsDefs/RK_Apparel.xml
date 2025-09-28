@@ -45,7 +45,9 @@
 		<tradeTags>
 			<li>RK_Apparel</li>
 		</tradeTags>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
+
 	<ThingDef Class="NewRatkin.CustomThingDef" Name="RK_ApparelMakeableBase" ParentName="RK_ApparelBase" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -62,6 +64,7 @@
 			<li>RK_Apparel</li>
 		</thingCategories>
 	</ThingDef>
+
 	<ThingDef Class="NewRatkin.CustomThingDef" Name="RK_HatMakeableBase" ParentName="RK_ApparelMakeableBase" Abstract="True">
 		<thingCategories>
 			<li>RK_Headgear</li>
@@ -71,7 +74,6 @@
 	<!-- <colorGenerator Class="ColorGenerator_Single"> -->
 	<!-- <color>(1,1,1,1)</color> -->
 	<!-- </colorGenerator> -->
-
 
 	<!-- 의류 기본온도저항 추위+4 더위2 -->	
 	<!-- 1티어 -->
@@ -115,7 +117,7 @@
 				<li>Worker</li>
 			</defaultOutfitTags>
 			<wornGraphicPath>Apparel/RK_ApronSkirt</wornGraphicPath>
-			<!-- <useWornGraphicMask>true</useWornGraphicMask> -->
+			<!--<useWornGraphicMask>true</useWornGraphicMask>-->
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -128,8 +130,6 @@
 			</tags>
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
-		<followStuffColor>True</followStuffColor>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
 	<!-- 더위저항 +12 -->
@@ -176,6 +176,7 @@
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 	</ThingDef>
+	
 	<!-- 여름모자 더위저항 +5 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_StrawHat</defName>
@@ -215,14 +216,6 @@
 			</tags>
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(1,1,1,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
 	</ThingDef>
 
 	<!-- 추위저항15 -->
@@ -290,6 +283,7 @@
 		</colorGenerator>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>
+
 	<!-- 가디건 추위저항 +6 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_Cardigan</defName>
@@ -361,6 +355,7 @@
 		</colorGenerator>
 		<followStuffColor>true</followStuffColor>
 	</ThingDef>
+
 	<!-- 털모자 추위저항 +5 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_WoolenHat</defName>
@@ -473,7 +468,6 @@
 		</apparel>
 	</ThingDef>
 
-
 	<!-- 의류 기본온도저항 추위+5 더위3 -->
 	<!-- 2티어 -->
 	<!-- 가방  운반용량 +20 -->
@@ -582,6 +576,7 @@
 			<researchPrerequisite>RatkinClothing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	
 	<!-- 작업모  식중독 예방 +5% 동물채집량 +5% -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_Coif</defName>
@@ -692,6 +687,7 @@
 			<researchPrerequisite>RatkinClothing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	
 	<!-- 공돌이 수술 성공률 +5% 치료품질 +5%-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_ResearchGlasses</defName>
@@ -803,6 +799,7 @@
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 	</ThingDef>
+	
 	<!-- 탐험모 이동속도+0.1 더위저항 +10 스탤스효과 +3% -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_ExplorerHat</defName>
@@ -913,6 +910,7 @@
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 	</ThingDef>
+	
 	<!-- 쉐프모자 식중독예방 +12% -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_ChefHat</defName>
@@ -1102,7 +1100,6 @@
 		</apparel>
 	</ThingDef>
 
-
 	<!-- 의류 기본온도저항 추위+7 더위+5 -->
 	<!-- 3티어 -->
 	<!-- 군용가방 +30 내구도 +20 -->
@@ -1154,6 +1151,7 @@
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 	</ThingDef>
+	
 	<!-- 제복 사회적영향력 +5% 근접회피찬스 5% 정신임계점 +5% 고통임계점 +10% 날카로움방어 좋은수준-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_OrderUniform</defName>
@@ -1224,6 +1222,7 @@
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 	</ThingDef>
+	
 	<!-- 방탄모자 조준속도 +10% 사격정확도 +5% 날카로움방어 좋은수준-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_BulletProofHelmet</defName>
@@ -1455,6 +1454,7 @@
 			<researchPrerequisite>HighClassClothing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	
 	<!-- 리본 거래가격 개선 +10% -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_RibbonHairBand</defName>
@@ -1618,33 +1618,29 @@
 			</tags>
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		<developmentalStageFilter MayRequire="Ludeon.RimWorld.Biotech">Child, Adult</developmentalStageFilter>
-		
-		
 		<renderSkipFlags>
 			<li>None</li>
 		</renderSkipFlags>
 		<useWornGraphicMask>true</useWornGraphicMask>
 		<renderNodeProperties>
-        <li>
-          <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
-          <texPath>Apparel/RK_SistersVeilB</texPath>
-          <baseLayer>0</baseLayer>
-          <parentTagDef>Head</parentTagDef>
-          <pawnType>Any</pawnType>
-          <drawData>
-            <defaultData>
-              <layer>-10</layer>
-            </defaultData>
-          </drawData>
-        </li>
-      </renderNodeProperties>
-		
+			<li>
+			  <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
+			  <texPath>Apparel/RK_SistersVeilB</texPath>
+			  <baseLayer>0</baseLayer>
+			  <parentTagDef>Head</parentTagDef>
+			  <pawnType>Any</pawnType>
+			  <drawData>
+				<defaultData>
+				  <layer>-10</layer>
+				</defaultData>
+			  </drawData>
+			</li>
+		</renderNodeProperties>
 		</apparel>
 		<recipeMaker>
 			<researchPrerequisite>HighClassClothing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-
 
 	<!-- 번외 -->
 	<!-- 랫킨 귀 헤어밴드 사회적영향력 +5% -->
@@ -1692,7 +1688,6 @@
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 	</ThingDef>
-
 
 	<!-- 적대 세력 한정 -->
 	<!-- 도둑질 보따리 +50 내구도 +20 -->
@@ -2001,7 +1996,6 @@
 		</tradeTags>
 	</ThingDef>
 
-
 	<!-- 판금 갑옷 높은 날카로움, 둔탁함 방어력, 느려짐-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_Plate</defName>
@@ -2077,8 +2071,8 @@
 			</tags>
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
-		<followStuffColor>True</followStuffColor>
 	</ThingDef>
+	
 	<!-- 판금 투구 높은 날카로움, 둔탁함 방어력, 느려짐-->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_PlateHelmA</defName>
@@ -2143,8 +2137,8 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>		
 		</recipeMaker>
-		<followStuffColor>true</followStuffColor>
 	</ThingDef>
+	
 	<!-- 투구 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_PlateHelmB</defName>
@@ -2210,8 +2204,8 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>		
 		</recipeMaker>
-		<followStuffColor>true</followStuffColor>
 	</ThingDef>
+	
 	<!-- 투구 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_HatMakeableBase">
 		<defName>RK_PlateHelmC</defName>
@@ -2276,14 +2270,12 @@
 				</disallowedThingDefs>
 			</defaultIngredientFilter>		
 		</recipeMaker>
-		<followStuffColor>true</followStuffColor>
 	</ThingDef>	
-
 
 	<!-- 목제 방패 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_WoodenShield</defName>
-		<label>ratkin wooden Shield</label>
+		<label>ratkin wooden shield</label>
 		<description>목재 방패.</description>
 		<thingClass>NewRatkin.Shield</thingClass>
 		<graphicData>
@@ -2335,7 +2327,6 @@
 			</tags>
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
-		<followStuffColor>false</followStuffColor>
 	</ThingDef>
 
 	<!-- 철제 방패 -->
@@ -2410,10 +2401,9 @@
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 		<followStuffColor>true</followStuffColor>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
-		<!-- 대형 철제 방패 -->
+	<!-- 대형 철제 방패 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_HeavyShield_Big</defName>
 		<label>ratkin Big heavy Shield</label>
@@ -2487,7 +2477,6 @@
 		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 		<followStuffColor>true</followStuffColor>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
 	<!-- 산타외투 -->
@@ -2547,6 +2536,7 @@
 		<tradeTags Inherit="false">
 		</tradeTags>
 	</ThingDef>
+	
 	<!-- 산타 모자 추위저항 +5 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_SantaHat</defName>
@@ -2592,6 +2582,7 @@
 		<tradeTags Inherit="false">
 		</tradeTags>
 	</ThingDef>
+	
 	<!-- 산타 보따리 +50 내구도 +20 -->
 	<ThingDef Class="NewRatkin.CustomThingDef" ParentName="RK_ApparelMakeableBase">
 		<defName>RK_SantaSack</defName>
@@ -2876,14 +2867,6 @@
 		<equippedStatOffsets>
 			<PsychicSensitivity>-0.2</PsychicSensitivity>
 		</equippedStatOffsets>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(1,1,1,1)</only>
-				</li>
-			</options>
-		</colorGenerator>
 	</ThingDef>
 
 	<ApparelLayerDef>

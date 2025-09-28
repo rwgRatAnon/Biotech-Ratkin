@@ -17,6 +17,7 @@
   <loadAfter>
     <li>nals.facialanimation</li>
     <li>fxz.ratkin.facialanimation</li>
+    <li>ceteam.combatextended</li>
   </loadAfter>
   <incompatibleWith>
     <li>solaris.ratkinracemod</li>

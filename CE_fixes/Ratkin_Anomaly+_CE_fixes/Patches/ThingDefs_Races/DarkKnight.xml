@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Combat Extended</li>
+	</mods>
+<match Class="PatchOperationSequence">
+	<operations>
+
+	<!--添加体型特征-->
+	<li Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="RA_DarkKnight"]</xpath>
+		<value>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</value>
+	</li>
+	
+	<!--添加基础属性-->
+	<li Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RA_DarkKnight"]/statBases</xpath>
+		<value>
+			<MeleeDodgeChance>0.03</MeleeDodgeChance>
+			<MeleeCritChance>0.7</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+			<AimingAccuracy>1.7</AimingAccuracy>
+			<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+		</value>
+	</li>
+	
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RA_DarkKnight"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>18</ArmorRating_Sharp>
+		</value>
+	</li>
+
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RA_DarkKnight"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>50</ArmorRating_Blunt>
+		</value>
+	</li>
+	
+	<li Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RA_DarkKnight"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>teeth</label>
+					<capacities>
+						<li>Bite</li>
+					</capacities>
+					<power>20</power>
+					<cooldownTime>1</cooldownTime>
+					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Bite</def>
+								<amount>18</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>6</armorPenetrationSharp>
+					<armorPenetrationBlunt>4</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>24</power>
+					<cooldownTime>0.7</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Scratch</def>
+								<amount>10</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+					<armorPenetrationBlunt>24</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Scratch</li>
+					</capacities>
+					<power>24</power>
+					<cooldownTime>0.7</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<surpriseAttack>
+						<extraMeleeDamages>
+							<li>
+								<def>Scratch</def>
+								<amount>10</amount>
+							</li>
+						</extraMeleeDamages>
+					</surpriseAttack>
+					<armorPenetrationSharp>8</armorPenetrationSharp>
+					<armorPenetrationBlunt>24</armorPenetrationBlunt>
+					<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+				</li>
+			</tools>
+		</value>
+	</li>
+
+	</operations>
+</match>
+</Operation>
+</Patch>

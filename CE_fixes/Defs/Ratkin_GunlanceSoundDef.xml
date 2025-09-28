@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <SoundDef>
+        <defName>RK_FireA</defName>  
+        <context>MapOnly</context>
+        <priorityMode>PrioritizeNewest</priorityMode>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Gunlance/Fire</clipPath>
+                    </li>
+                </grains>
+                <sustainLoop>False</sustainLoop>
+                <volumeRange>40~40</volumeRange>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Gunlance/WyvernFire</clipPath>
+                    </li>
+                </grains>
+                <sustainLoop>False</sustainLoop>
+                <volumeRange>40~40</volumeRange>
+                <pitchRange>1.00~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>RK_WyvernFireA</defName>  
+        <context>MapOnly</context>
+        <priorityMode>PrioritizeNearest</priorityMode>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Gunlance/WyvernFire</clipPath>
+                    </li>
+                </grains>
+                <sustainLoop>False</sustainLoop>
+                <volumeRange>20~25</volumeRange>
+                <pitchRange>1.00~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>

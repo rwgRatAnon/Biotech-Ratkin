@@ -60,6 +60,9 @@
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
 		</recipeMaker>
 		<comps>
 			<li Class="SYS.CompProperties_WeaponExtention">

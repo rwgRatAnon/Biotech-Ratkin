@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[@Name="RKBasePawnKind"]/apparelTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[@Name="RKBasePawnKind"]</xpath>
+			<value>
+				<apparelTags>
+					<li>RK_Loadbearing</li>
+				</apparelTags>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[@Name="RKBasePawnKind"]/apparelTags</xpath>
+			<value>
+				<li>RK_Loadbearing</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[
+			defName="RatkinCombatant" or
+			defName="RatkinVanguard" or
+			defName="RatkinDefender" or
+			defName="RatkinSoldier" or
+			defName="RatkinEliteGuardener" or
+			defName="RatkinKnight" or
+			defName="RatkinEliteDefender" or
+			defName="RatkinKnightCommander" or
+			defName="RatkinEliteSoldier" or
+			defName="RatkinDemoMan" or
+			defName="RatkinMercenaryLight" or
+			defName="RatkinMercenary"
+			]/apparelRequired</xpath>
+		<value>
+			<li>RK_Backpack</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+	<operations>
+
+		<!-- ========== Combatant ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinCombatant"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>8</min>
+						<max>12</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Mercenary ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinMercenary"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>4</min>
+						<max>6</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Merchant ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinMerchant"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>4</min>
+						<max>6</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Soldier ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinSoldier"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>4</min>
+						<max>6</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Subject ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinSubject"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>4</min>
+						<max>6</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Guardener ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinEliteGuardener"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>6</min>
+						<max>8</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Murderer ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinMurderer"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>2</min>
+						<max>6</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Vagabond ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinVagabond"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>2</min>
+						<max>6</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Mercenary - Light ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinMercenaryLight"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>4</min>
+						<max>6</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Elite ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinEliteSoldier"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>4</min>
+						<max>6</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Demoman ========== -->
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/PawnKindDef[defName="RatkinDemoMan"]/weaponTags</xpath>
+			<value>
+				<weaponTags>
+					<li>GrenadeDestructive</li>
+				</weaponTags>
+			</value>
+		</li>
+
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinDemoMan"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>8</min>
+						<max>12</max>
+					</primaryMagazineCount>
+					<sidearms>
+						<li>
+							<magazineCount>
+								<min>6</min>
+								<max>10</max>
+							</magazineCount>
+							<generateChance>0.7</generateChance>
+							<sidearmMoney>
+								<min>375</min>
+								<max>825</max>
+							</sidearmMoney>
+							<weaponTags>
+								<li>RK_Rifle</li>
+								<li>CE_AI_Grenade</li>
+							</weaponTags>
+						</li>
+					</sidearms>
+				</li>
+			</value>
+		</li>
+
+		<!-- ========== Vagabond ========== -->
+		<li Class="PatchOperationAddModExtension">
+			<xpath>Defs/PawnKindDef[defName="RatkinPettyThief"]</xpath>
+			<value>
+				<li Class="CombatExtended.LoadoutPropertiesExtension">
+					<primaryMagazineCount>
+						<min>2</min>
+						<max>4</max>
+					</primaryMagazineCount>
+				</li>
+			</value>
+		</li>
+
+	</operations>
+	</Operation>
+</Patch>

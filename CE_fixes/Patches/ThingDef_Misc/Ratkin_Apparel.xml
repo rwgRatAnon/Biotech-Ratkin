@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<!-- Remove/Clear vanilla armor multipliers -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[
+			defName="RK_SistersDress" or
+			defName="RK_FlatColorCoat" or
+			defName="RK_GaurdenUniform" or
+			defName="RK_ChefSuit" or
+			defName="RK_WorkerWear" or
+			defName="RK_ExplorerWear" or
+			defName="RK_SummerDress" or			
+			defName="RK_ResearchGown" or
+			defName="RK_FrillOnepiece" or
+			defName="RK_FlatColorCoat" or
+			defName="RK_ApronSkirt" or
+			defName="RK_SantaRobe" or
+			defName="RK_WinterRobe" or
+			defName="RK_RoyalRobe" or
+			defName="RK_Cardigan" or
+			defName="RK_SistersVeil" or
+			defName="RK_ChefHat" or
+			defName="RK_SantaHat" or
+			defName="RK_Coif" or
+			defName="RK_WoolenHat" or
+			defName="RK_ExplorerHat" or
+			defName="RK_RoyalCrown"
+		]/statBases/StuffEffectMultiplierArmor</xpath>
+	</Operation>
+	
+	<!-- Civilian hats bulk -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="RK_RottiHat" or 
+		defName="RK_SistersVeil" or 
+		defName="RK_ChefHat" or 
+		defName="RK_SantaHat" or 
+		defName="RK_Coif" or 
+		defName="RK_HeadBand" or 
+		defName="RK_WoolenHat" or 
+		defName="RK_ExplorerHat" or 
+		defName="RK_RoyalCrown" or 
+		defName="RK_ResearchGlasses" or 
+		defName="RK_EarCostume" or 
+		defName="RK_StrawHat"
+		]/statBases</xpath>
+		<value>
+			<Bulk>1</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+	
+	<!-- Civilian hats armor multiplier -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="RK_SistersVeil" or 
+		defName="RK_ChefHat" or 
+		defName="RK_SantaHat" or 
+		defName="RK_Coif" or 
+		defName="RK_WoolenHat" or 
+		defName="RK_ExplorerHat"
+		]/statBases</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	
+	<!-- Royal Crown -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_RoyalCrown"]/statBases</xpath>
+		<value>
+			<ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	
+	<!-- Research Glasses -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_ResearchGlasses"]/statBases</xpath>
+		<value>
+			<ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_ResearchGlasses"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_ResearchGlasses"]/apparel/layers</xpath>
+		<value>
+			<layers>
+				<li>EyeCover</li>
+			</layers>
+		</value>
+	</Operation>
+	
+	<!-- Strawhat -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_StrawHat"]/statBases</xpath>
+		<value>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_StrawHat"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	
+	<!-- Dress bulk -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="RK_SistersDress" or 
+		defName="RK_SummerDress"
+		]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>2</WornBulk>
+		</value>
+	</Operation>
+
+	<!-- Civilian armor multiplier -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="RK_FlatColorCoat" or 
+		defName="RK_ChefSuit" or 
+		defName="RK_WorkerWear" or 
+		defName="RK_ExplorerWear" or 
+		defName="RK_ResearchGown" or 
+		defName="RK_FrillOnepiece" or 
+		defName="RK_ApronSkirt"
+		]/statBases</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>2</WornBulk>
+		</value>
+	</Operation>
+
+	<!-- Civilian armor multiplier 2 -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="RK_SistersDress" or 
+		defName="RK_FlatColorCoat" or 
+		defName="RK_GaurdenUniform" or 
+		defName="RK_ChefSuit" or 
+		defName="RK_WorkerWear" or 
+		defName="RK_ExplorerWear" or 
+		defName="RK_SummerDress" or 
+		defName="RK_ResearchGown" or 
+		defName="RK_FrillOnepiece" or 
+		defName="RK_ApronSkirt"
+		]/statBases</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	
+	<!-- Guardener Uniform -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_GaurdenUniform"]/statBases</xpath>
+		<value>
+			<Bulk>8</Bulk>
+			<WornBulk>6</WornBulk>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_GaurdenUniform"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_GaurdenUniform"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>3</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	
+	<!-- Coat bulk -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="RK_SantaRobe" or 
+		defName="RK_WinterRobe" or 
+		defName="RK_RoyalRobe" or 
+		defName="RK_WhiteCoat"
+		]/statBases</xpath>
+		<value>
+			<Bulk>6</Bulk>
+			<WornBulk>4</WornBulk>
+		</value>
+	</Operation>
+
+	<!-- Coat armor multiplier -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+		defName="RK_SantaRobe" or 
+		defName="RK_WinterRobe" or 
+		defName="RK_RoyalRobe" or 
+		defName="RK_Cardigan"
+		]/statBases</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	
+	<!-- Royal Robe -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_RoyalRobe"]/statBases</xpath>
+		<value>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<!-- White Coat -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_WhiteCoat"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>8</ArmorRating_Sharp>
+			<ArmorRating_Electric>0.60</ArmorRating_Electric>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_WhiteCoat"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>4</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	
+	<!-- Cardigan -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_Cardigan"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+	
+	<!-- Crossback -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_CrossBack"]/statBases</xpath>
+		<value>
+			<Bulk>2</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_CrossBack"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryBulk>20</CarryBulk>
+				<CarryWeight>10</CarryWeight>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<!-- Backpack -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_Backpack"]/statBases</xpath>
+		<value>
+			<Bulk>3</Bulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Backpack"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryBulk>30</CarryBulk>
+				<CarryWeight>15</CarryWeight>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Backpack"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	
+	<!-- Outdoor Backpack -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_OutdoorBackpack"]/statBases</xpath>
+		<value>
+			<Bulk>6</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_OutdoorBackpack"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryBulk>35</CarryBulk>
+				<CarryWeight>20</CarryWeight>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_OutdoorBackpack"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	
+	<!-- Sack -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_Sack"]/statBases</xpath>
+		<value>
+			<Bulk>10</Bulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Sack"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryBulk>45</CarryBulk>
+				<CarryWeight>30</CarryWeight>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+	
+	<!-- Santa Sack -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_SantaSack"]/statBases</xpath>
+		<value>
+			<Bulk>6</Bulk>
+			<WornBulk>2</WornBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_SantaSack"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryBulk>55</CarryBulk>
+				<CarryWeight>30</CarryWeight>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+	
+	<!-- Combat Helmet -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_BulletProofHelmet"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_BulletProofHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4.5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_BulletProofHelmet"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	
+	<!-- Order Uniform -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_OrderUniform"]/statBases/Mass</xpath>
+		<value>
+			<Bulk>16</Bulk>
+			<WornBulk>10</WornBulk>
+			<Mass>10</Mass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_OrderUniform"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_OrderUniform"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>4.75</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_OrderUniform"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>6.75</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_OrderUniform"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Hands</li>
+			<li>Feet</li>
+		</value>
+	</Operation>
+		
+	<!-- Battlesuit -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_BattleSuit"]/statBases</xpath>
+		<value>
+			<Bulk>60</Bulk>
+			<WornBulk>12</WornBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_BattleSuit"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_BattleSuit"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_BattleSuit"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>36</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_BattleSuit"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<Suppressability>-0.50</Suppressability>
+				<ToxicEnvironmentResistance>0.70</ToxicEnvironmentResistance>
+				<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+				<CarryBulk>40</CarryBulk>
+				<CarryWeight>30</CarryWeight>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_BattleSuit"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Hands</li>
+			<li>Feet</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_BattleSuit"]</xpath>
+		<value>
+			<modExtensions>
+				<li Class="CombatExtended.PartialArmorExt">
+					<stats>
+					<li>
+					<ArmorRating_Sharp>0.125</ArmorRating_Sharp>
+					<parts>
+					<li>Hand</li>
+					</parts>
+					</li>
+					<li>
+					<ArmorRating_Blunt>0.125</ArmorRating_Blunt>
+					<parts>
+					<li>Hand</li>
+					</parts>
+					</li>
+					
+					<li>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<parts>
+					<li>Foot</li>
+					</parts>
+					</li>
+					<li>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<parts>
+					<li>Foot</li>
+					</parts>
+					</li>
+					</stats>
+				</li>
+			</modExtensions>
+		</value>
+	</Operation>
+	
+	<!-- Combat Mask -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_Mask" or defName="RK_MaskB"]/statBases</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_Mask" or defName="RK_MaskB"]/equippedStatOffsets</xpath>
+		<value>
+			<Suppressability>-0.25</Suppressability>
+			<PsychicSensitivity>-0.1</PsychicSensitivity>
+			<AimingAccuracy>0.1</AimingAccuracy>
+			<SmokeSensitivity>-1</SmokeSensitivity>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Mask" or defName="RK_MaskB"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Mask" or defName="RK_MaskB"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>14</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Mask" or defName="RK_MaskB"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>28</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	
+	<!-- Plate Armor -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_Plate"]/statBases</xpath>
+		<value>
+			<Bulk>60</Bulk>
+			<WornBulk>8</WornBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Plate"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4.3</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Plate"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>2</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_Plate"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>4</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_Plate"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Hands</li>
+			<li>Feet</li>
+		</value>
+	</Operation>
+	
+	<!-- Plate Helm -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_PlateHelmA" or 
+		defName="RK_PlateHelmB" or 
+		defName="RK_PlateHelmC"]/statBases</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_PlateHelmA" or 
+		defName="RK_PlateHelmB" or 
+		defName="RK_PlateHelmC"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>3</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_PlateHelmA" or 
+		defName="RK_PlateHelmB" or 
+		defName="RK_PlateHelmC"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>8</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RK_PlateHelmA" or 
+		defName="RK_PlateHelmB" or 
+		defName="RK_PlateHelmC"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>4.3</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_PlateHelmA" or 
+		defName="RK_PlateHelmB" or 
+		defName="RK_PlateHelmC"]/equippedStatOffsets</xpath>
+		<value>
+			<MeleeHitChance>-2</MeleeHitChance>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RK_PlateHelmA" or 
+		defName="RK_PlateHelmB" or 
+		defName="RK_PlateHelmC"]/equippedStatOffsets</xpath>
+		<value>
+			<Suppressability>-0.25</Suppressability>
+		</value>
+	</Operation>
+	
+	<!-- Add Backpack tags -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[
+			defName="RK_Backpack" or
+			defName="RK_CrossBack" or
+			defName="RK_OutdoorBackpack" or
+			defName="RK_Sack"
+		]/apparel/tags</xpath>
+		<value>
+			<li>RK_Loadbearing</li>
+		</value>
+	</Operation>
+	
+	<!-- Backpack layer fix -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="RK_SantaSack" or
+			defName="RK_Backpack" or
+			defName="RK_CrossBack" or
+			defName="RK_OutdoorBackpack" or
+			defName="RK_Sack"
+		]/apparel/layers</xpath>
+		<value>
+		  <layers>
+			<li>Backpack</li>
+		  </layers>
+		</value>
+	</Operation>
+</Patch>

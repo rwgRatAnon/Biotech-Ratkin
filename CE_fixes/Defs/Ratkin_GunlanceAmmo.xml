@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingCategoryDef>
+		<defName>AmmoRatkinDragon</defName>
+		<label>Ratkin Dragon Strike Ammo</label>
+		<parent>AmmoGrenades</parent>
+		<iconPath>UI/Icons/ThingCategories/AmmoGrenades</iconPath>
+	</ThingCategoryDef>
+
+    <!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_RK_DragonAmmo_Normal</defName>
+		<label>Normal Ratkin Dragon Strike Ammo</label>
+		<ammoTypes>
+			<Ammo_RK_DragonAmmo_Normal>Bullet_RK_DragonAmmo_Normal</Ammo_RK_DragonAmmo_Normal>
+		</ammoTypes>
+		<similarTo>AmmoSet_LauncherGrenade</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+    <CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_RK_DragonAmmo_Flame</defName>
+		<label>Flame Ratkin Dragon Strike Ammo</label>
+		<ammoTypes>
+			<Ammo_RK_DragonAmmo_Flame>Bullet_RK_DragonAmmo_Flame</Ammo_RK_DragonAmmo_Flame>
+		</ammoTypes>
+		<similarTo>AmmoSet_LauncherGrenade</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Ammo_RK_DragonAmmo_Base" ParentName="MediumAmmoBase" Abstract="True">
+		<description>An ultra-large caliber ammunition developed by the Ratkin Kingdom Arsenal, said to be capable of even defeating dragons.</description>
+		<statBases>
+			<Mass>0.275</Mass>
+			<Bulk>0.40</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoRatkinDragon</li>
+		</thingCategories>
+		<stackLimit>100</stackLimit>
+		<cookOffFlashScale>100</cookOffFlashScale>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_RK_DragonAmmo_Base">
+		<defName>Ammo_RK_DragonAmmo_Normal</defName>
+		<label>Normal Ratkin Dragon Strike Ammo</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/WyvernAmmo_Normal</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+		</statBases>
+		<ammoClass>GrenadeHE</ammoClass>
+		<detonateProjectile>Bullet_RK_DragonAmmo_Normal</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_RK_DragonAmmo_Base">
+		<defName>Ammo_RK_DragonAmmo_Flame</defName>
+		<label>Flame Ratkin Dragon Strike Ammo</label>
+		<graphicData>
+			<texPath>Things/Item/Resource/WyvernAmmo_Spread</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>4</MarketValue>
+		</statBases>
+		<ammoClass>GrenadeIncendiary</ammoClass>
+		<detonateProjectile>Bullet_RK_DragonAmmo_Flame</detonateProjectile>
+	</ThingDef>
+
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="BaseRKDragonBullet" ParentName="BaseExplosiveBullet" Abstract="true">
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.1,0.1)</drawSize>
+            <shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>30</speed>
+            <gravityFactor>100</gravityFactor>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Fleck_GrenadeLauncherAmmoCasings</casingMoteDefname>
+			<casingFilthDefname>Filth_GrenadeLauncherAmmoCasings</casingFilthDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseRKDragonBullet">
+		<defName>Bullet_RK_DragonAmmo_Normal</defName>
+		<label>Ratkin Dragon Strike (Normal)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+            <pelletCount>20</pelletCount>
+			<damageAmountBase>20</damageAmountBase>
+            <spreadMult>10</spreadMult>
+			<explosionRadius>0.1</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+                <fragXZAngleRange>-2~2</fragXZAngleRange>
+                <fragAngleRange>-30~30</fragAngleRange>
+				<fragments>
+					<Fragment_RKDragonNormal>2</Fragment_RKDragonNormal>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <ThingDef ParentName="BaseFragment">
+        <defName>Fragment_RKDragonNormal</defName>
+        <label>Ratkin Explosion</label>
+        <graphicData>
+          <texPath>Things/Projectile/Fragments/Fragment_Small</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(0.1,0.1)</drawSize>
+          <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+          <damageDef>Bomb</damageDef>
+          <explosionRadius>0.5</explosionRadius>
+          <damageAmountBase>10</damageAmountBase>
+          <speed>10</speed>
+          <gravityFactor>100</gravityFactor>
+        </projectile>
+      </ThingDef>
+
+
+      <ThingDef ParentName="BaseRKDragonBullet">
+		<defName>Bullet_RK_DragonAmmo_Flame</defName>
+		<label>Ratkin Dragon Strike (Flame)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Flame</damageDef>
+			<pelletCount>15</pelletCount>
+			<damageAmountBase>20</damageAmountBase>
+            <spreadMult>13</spreadMult>
+			<explosionRadius>0.1</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+                <fragXZAngleRange>-2~2</fragXZAngleRange>
+                <fragAngleRange>-30~30</fragAngleRange>
+				<fragments>
+					<Fragment_RKDragonFlame>2</Fragment_RKDragonFlame>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <ThingDef ParentName="BaseFragment">
+        <defName>Fragment_RKDragonFlame</defName>
+        <label>Ratkin Flame</label>
+        <graphicData>
+          <texPath>Things/Projectile/Fragments/Fragment_Small</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(0.1,0.1)</drawSize>
+          <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+          <damageDef>Flame</damageDef>
+          <explosionRadius>0.5</explosionRadius>
+          <damageAmountBase>10</damageAmountBase>
+          <speed>10</speed>
+          <gravityFactor>80</gravityFactor>
+        </projectile>
+      </ThingDef>
+
+    <!-- ==================== Recipes ========================== -->
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeAmmo_RKDragonAmmo_Normal</defName>
+        <label>Make Normal Ratkin Dragon Strike</label>
+        <description>Craft 10 Normal Ratkin Dragon Strike.</description>
+        <jobString>Making 10 Normal Ratkin Dragon Strike.</jobString>
+        <recipeUsers Inherit="false">
+            <li>RK_FueledSmithy</li>
+            <li>RK_ElectricSmithy</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FSX</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>FSX</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_RK_DragonAmmo_Normal>10</Ammo_RK_DragonAmmo_Normal>
+        </products>
+        <workAmount>2600</workAmount>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeAmmo_RKDragonAmmo_Flame</defName>
+        <label>Make Flame Ratkin Dragon Strike</label>
+        <description>Craft 10 Flame Ratkin Dragon Strike.</description>
+        <jobString>Making 10 Flame Ratkin Dragon Strike.</jobString>
+        <recipeUsers Inherit="false">
+            <li>RK_FueledSmithy</li>
+            <li>RK_ElectricSmithy</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Prometheum</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+				<li>Prometheum</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_RK_DragonAmmo_Flame>10</Ammo_RK_DragonAmmo_Flame>
+        </products>
+        <workAmount>2600</workAmount>
+    </RecipeDef>
+</Defs>
